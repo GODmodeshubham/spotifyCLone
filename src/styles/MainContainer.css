@@ -231,7 +231,7 @@
     padding-bottom: 5px;
   }
   
-  .AudioList .songs.active,
+  .AudioList .songs.active,.AudioList.song.active,
   .AudioList .songs.active .song .section .songName .songSpan {
     color: #f1f1f1 !important;
   }
@@ -320,6 +320,31 @@
     .content {
       padding: 10px 15px;
     }
+    .Banner .content .artist .left .name h2{
+      font-size: 25px;
+    }
+    .Banner .content.artist.right a{
+      padding: 5px 15px;
+      font-size: 12px;
+      margin: 0 10px;
+    }
+    .menuList{
+      padding:  5px 10px;
+    }
+    .menuList ul li{
+      margin: 0 5px;
+    }
+    .menuList p{
+      font-size: 12px;
+    }
+    .menuList p i{
+      font-size: 10px;
+    }
+    .AudioList .songs.song.section{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
   
     .content .breadCrump P {
       font-size: 12px;
@@ -370,17 +395,17 @@
       padding: 10px 5px;
     }
   
-    .AudioList .songs .song .section {
+     .songs .song .section {
       flex-direction: column;
     }
   
-    .AudioList .songs .song .section .songName {
+     .songs .song .section .songName {
       width: 100%;
     }
   
-    .AudioList .songs .song .section .hits {
-      margin-left: 0;
-      margin-top: 5px;
+     .songs .song .section .hits {
+      width: 100%;
+      margin-top: 10px;
       justify-content: space-between;
     }
   }
