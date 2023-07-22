@@ -28,10 +28,10 @@ const MenuList = [
     icon: <FaBroadcastTower />,
     name: "Radio",
   },
-  {
-    id: 6,
-    icon: <FaPodcast />,
-    name: "Podcast",
-  },
+  // {
+  //   id: 6,
+  //   icon: <FaPodcast />,
+  //   name: "Podcast",
+  // },
 ];
 export default MenuList;

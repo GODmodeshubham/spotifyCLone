@@ -1,17 +1,16 @@
 // import logo from './logo.svg';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import LeftMenu from "./components/LeftMenu";
-import MainContainer from "./components/MainContainer";
-import RightMenu from "./components/RightMenu";
+
+import MasterContainer from "./container/MasterContainer";
+import Feedback from "./components/Feedback";
 
 function App() {
   return (
-    <div className="App">
-      <LeftMenu />
-      <MainContainer />
-      <RightMenu />
-      <div className="background"></div>
-    </div>
+    <Routes>
+      <Route path="/*" element={<MasterContainer />} />
+      <Route path="/user_mood" element={<Feedback />} />
+    </Routes>
   );
 }
 

@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Artist from "../images/artist.jpg";
 import Check from "../images/check.png";
 import { FaEllipsisH, FaHeadphones, FaCheck } from "react-icons/fa";
+import { useDispatch, useSelector } from "react-redux";
+import { setBg } from "../context/actions/bgAction";
 const Banner = () => {
+  // const DisplayBg = () => {
+  //   const dispatch = useDispatch();
+  //   let bg = useSelector((state) => state.data);
+  //   if (bg === "") {
+  //     dispatch(setBg(Artist));
+  //   }
+  //   // bg = useSelector((state) => state.background);
+  //   console.log("clicked", bg);
+  //   return bg;
+  // };
+  const bg = useSelector((state) => state.background);
+  // console.log(bg);
+  const [bgimage, setBgimage] = useState(Artist);
+
+  useEffect(() => {
+    setBgimage(bg);
+    console.log(bg);
+  }, [bg]);
+
   return (
     <div className="Banner">
-      <img src={Artist} className="bannerImg" alt="" />
+      <img src={bgimage} className="bannerImg" alt="" />
       <div className="content">
         <div className="breadCrump">
           <p>

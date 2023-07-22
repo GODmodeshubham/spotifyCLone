@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-
+import { Link } from "react-router-dom";
+import { BiSolidCategoryAlt } from "react-icons/bi";
 const Menu = ({ title, menuObject }) => {
   useEffect(() => {
     const allLi = document
@@ -15,6 +16,11 @@ const Menu = ({ title, menuObject }) => {
     <div className="MenuContainer">
       <p className="title">{title}</p>
       <ul>
+        <li key={0}>
+          <Link to="/user_mood">Genre</Link>
+          <i>{BiSolidCategoryAlt}</i>
+        </li>
+
         {menuObject &&
           menuObject.map((li) => (
             <li key={li.id}>

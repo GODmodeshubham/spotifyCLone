@@ -2,10 +2,17 @@ import React, { useEffect, useState } from "react";
 import { FaHeadphones, FaHeart, FaRegClock, FaRegHeart } from "react-icons/fa";
 import { Songs } from "./Songs";
 import MusicPlayer from "./MusicPlayer";
+import { useDispatch, useSelector } from "react-redux";
+import { setBg } from "../context/actions/bgAction";
 const AudioList = () => {
   const [song, setSong] = useState(Songs[0].song);
   const [img, setImg] = useState(Songs[0].imgSrc);
   const [songs, setSongs] = useState(Songs);
+  const [myAudio, setMyAudio] = useState(Songs);
+  const dispatch = useDispatch();
+  const genre = useSelector((state) => state.genre);
+
+  //************************************************************************* */
 
   useEffect(() => {
     const songs = document.querySelectorAll(".songs");
@@ -16,8 +23,20 @@ const AudioList = () => {
     songs.forEach((n) => n.addEventListener("click", changeMenuActive));
   }, []);
 
+  //*************************************************************************** */
+  let mySongs = Songs;
+
+  useEffect(() => {
+    mySongs = Songs.filter(
+      (audio) => audio.type === genre || genre === "" || genre === null
+    );
+    console.log(mySongs);
+    setMyAudio(mySongs);
+  }, [genre]);
+
+  //**************************************************************************** */
   const handleClick = (id) => {
-    Songs.forEach((song) => {
+    myAudio.forEach((song) => {
       if (song.id === id) {
         console.log("clicked", id);
 
@@ -32,6 +51,7 @@ const AudioList = () => {
     // console.log(imgSrc);
     setSong(songSrc);
     setImg(imgSrc);
+    dispatch(setBg(imgSrc));
     // console.log(img);
     // console.log(song);
   };
@@ -39,14 +59,14 @@ const AudioList = () => {
   return (
     <div className="AudioList">
       <h2 className="title">
-        The List <span> {Songs?.length} Songs</span>
+        The List <span> {myAudio?.length} Songs</span>
       </h2>
       <div
         className="
         songsContainer"
       >
-        {Songs &&
-          Songs.map((song, index) => (
+        {myAudio &&
+          myAudio.map((song, index) => (
             <div
               className="songs"
               key={index}

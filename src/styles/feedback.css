@@ -1,0 +1,59 @@
+.grid{
+    background-image: url('https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'); /* Replace with your actual background image */
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .heading{
+    padding-bottom: 100px;
+    
+  }
+  .heading h1{
+    font-size: 50px;
+    text-shadow: 2px;
+
+  }
+  .emoji-conatiner{
+   backdrop-filter: blur(20px);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 30%;
+    width: 60%;
+    overflow: hidden;
+    gap: 40px;
+    font-size: 40px;
+    border-radius: 40px;
+  }
+  .emoji-face{
+    cursor: pointer;
+  }
+  .emoji-face:hover{
+   font-size: 50px;
+   transition: 0.2s;
+  }
+  
+  .blur-overlay {
+    backdrop-filter: blur(8px); /* Adjust the value to control the blur intensity */
+    background-color: rgba(255, 255, 255, 0.5); /* Add a semi-transparent background color to enhance the effect */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
