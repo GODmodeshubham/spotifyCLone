@@ -18,7 +18,7 @@ const Feedback = () => {
   const handleClick = (id, type) => {
     console.log(type);
     dispatch(SetType(type));
-    navigate("/");
+    navigate("/user_mood");
   };
 
   return (
@@ -28,16 +28,18 @@ const Feedback = () => {
           <h1>Meet Your Fleet</h1>
         </div>
         <div className="emoji-conatiner">
-          {emoji &&
-            emoji.map((mood, index) => (
-              <div
-                onClick={() => handleClick(index, mood.type)}
-                className="emoji-face"
-                id={index}
-              >
-                {mood.name}
-              </div>
-            ))}
+          <div className="emoji-strap">
+            {emoji &&
+              emoji.map((mood, index) => (
+                <div
+                  onClick={() => handleClick(index, mood.type)}
+                  className="emoji-face"
+                  id={index}
+                >
+                  {mood.name}
+                </div>
+              ))}
+          </div>
         </div>
       </div>
     </div>

@@ -236,3 +236,23 @@
       height: 100px;
     }
   } 
+  @media screen and (min-width: 360px) and (max-width: 820px) {
+    /* .musicPlayer .songImage {
+      width: 100px;
+      min-width: 100px;
+      height: 100px;
+    } */
+    .musicPlayer{
+      display: flex;
+      flex-direction: column;
+      margin-left: 0;
+    }
+    .songImage {
+      margin-left: 80px;
+      padding-bottom: 10px;
+      margin-bottom: 5px;
+  }
+  .songAttributes{
+    margin-left: 0;
+  }
+  } 

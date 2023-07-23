@@ -26,6 +26,7 @@
   .heading h1{
     font-size: 50px;
     text-shadow: 2px;
+    text-align: center;
 
   }
   .emoji-conatiner{
@@ -47,6 +48,11 @@
    font-size: 50px;
    transition: 0.2s;
   }
+  .emoji-strap{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
   
   .blur-overlay {
     backdrop-filter: blur(8px); /* Adjust the value to control the blur intensity */
@@ -56,4 +62,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  @media screen and (min-width:360px) and (max-width:810px){
+    .emoji-conatiner{
+      width: 100%;
+      /* scroll-behavior: smooth; */
+      overflow:scroll
+      
+    }
+    .emoji-face:hover{
+      font-size: 50px;
+      transition: 0.2s;
+     }
+     .emoji-strap{
+      gap: 25px;
+     }
+     .heading h1{
+      text-align: center;
+     }
   }

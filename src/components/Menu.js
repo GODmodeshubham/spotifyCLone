@@ -17,7 +17,7 @@ const Menu = ({ title, menuObject }) => {
       <p className="title">{title}</p>
       <ul>
         <li key={0}>
-          <Link to="/user_mood">Genre</Link>
+          <Link to="/">Genre</Link>
           <i>{BiSolidCategoryAlt}</i>
         </li>
 

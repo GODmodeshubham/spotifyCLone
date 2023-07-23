@@ -8,8 +8,8 @@ import Feedback from "./components/Feedback";
 function App() {
   return (
     <Routes>
-      <Route path="/*" element={<MasterContainer />} />
-      <Route path="/user_mood" element={<Feedback />} />
+      <Route path="/*" element={<Feedback />} />
+      <Route path="/user_mood" element={<MasterContainer />} />
     </Routes>
   );
 }
