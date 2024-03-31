@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { BiSolidCategoryAlt } from "react-icons/bi";
 const Menu = ({ title, menuObject }) => {
+  const [Click, SetClick] = useState(false);
   useEffect(() => {
     const allLi = document
       .querySelector(".MenuContainer ul")
@@ -12,6 +13,17 @@ const Menu = ({ title, menuObject }) => {
     }
     allLi.forEach((n) => n.addEventListener("click", changeMenuActive));
   }, []);
+  // useEffect(() => {
+  //   if (Click) {
+  //     const element = document.getElementById("radio");
+  //     element.style.fontSize = "20px";
+  //     element.style.color = "blue";
+  //   }
+  // }, [SetClick]);
+  function handleClick() {
+    SetClick(true);
+  }
+
   return (
     <div className="MenuContainer">
       <p className="title">{title}</p>

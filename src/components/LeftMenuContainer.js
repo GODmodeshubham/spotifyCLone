@@ -23,11 +23,11 @@ const MenuList = [
     icon: <BiPulse />,
     name: "Discover",
   },
-  {
-    id: 3,
-    icon: <FaBroadcastTower />,
-    name: "Radio",
-  },
+  // {
+  //   id: 3,
+  //   icon: <FaBroadcastTower />,
+  //   name: "Radio",
+  // },
   // {
   //   id: 6,
   //   icon: <FaPodcast />,

@@ -4,12 +4,14 @@ import "./App.css";
 
 import MasterContainer from "./container/MasterContainer";
 import Feedback from "./components/Feedback";
+import Radio from "./components/Radio";
 
 function App() {
   return (
     <Routes>
       <Route path="/*" element={<Feedback />} />
       <Route path="/user_mood" element={<MasterContainer />} />
+      <Route path="/radio" element={<Radio />} />
     </Routes>
   );
 }
