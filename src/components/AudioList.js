@@ -30,7 +30,7 @@ const AudioList = () => {
     mySongs = Songs.filter(
       (audio) => audio.type === genre || genre === "" || genre === null
     );
-    console.log(mySongs);
+    // console.log(mySongs);
     setMyAudio(mySongs);
   }, [genre]);
 
@@ -38,7 +38,7 @@ const AudioList = () => {
   const handleClick = (id) => {
     myAudio.forEach((song) => {
       if (song.id === id) {
-        console.log("clicked", id);
+        // console.log("clicked", id);
 
         song.favourite = !song.favourite;
       }

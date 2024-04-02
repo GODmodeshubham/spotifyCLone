@@ -5,11 +5,10 @@ import { SetType } from "../context/actions/typeAction";
 import { useNavigate } from "react-router-dom";
 const Feedback = () => {
   const emoji = [
-    { id: 1, name: "😴", type: "tired" },
+    { id: 1, name: "😴", type: "Masti" },
     { id: 2, name: "🤩", type: "energetic" },
     { id: 3, name: "😢", type: "sad" },
     { id: 4, name: "😍", type: "romantic" },
-    { id: 5, name: "😕", type: "confused" },
   ];
 
   const dispatch = useDispatch();

@@ -4,7 +4,7 @@ const bgReducer = (state = null, action) => {
     case "SET_BG":
       return action.background || Artist;
     default:
-      return state || null;
+      return state || Artist;
   }
 };
 export default bgReducer;

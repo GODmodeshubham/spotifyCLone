@@ -97,6 +97,46 @@ const Songs = [
     imgSrc:
       "https://c-cl.cdn.smule.com/rs-s-sf-3/arr/d6/1a/ec0ab67a-7a86-496e-b0da-d34945bffb33.jpg",
   },
+  {
+    id: 11,
+    favourite: false,
+    songName: "Sooraj Dooba He",
+    artist: "CVR Toon ",
+    type: "Masti",
+    song: "https://firebasestorage.googleapis.com/v0/b/melodystream-41d0f.appspot.com/o/Songs%2Fsooraj%20diiba%20h%20yaro.mp3?alt=media&token=6a9695d6-5bd2-4faf-8395-49aa4f87f05e",
+    imgSrc:
+      "https://firebasestorage.googleapis.com/v0/b/melodystream-41d0f.appspot.com/o/images%2Fsooraj%20dooba%20he.jpeg?alt=media&token=91f939cf-7ca5-4d86-aad2-bd69e1533a2e",
+  },
+  {
+    id: 12,
+    favourite: false,
+    songName: "Galan Goodiyan",
+    artist: "CVR Toon ",
+    type: "Masti",
+    song: "https://firebasestorage.googleapis.com/v0/b/melodystream-41d0f.appspot.com/o/Songs%2Fgalan%20goodaiyan.mp3?alt=media&token=3e4bd36c-c4aa-4b1c-978f-5975dfc577ea",
+    imgSrc:
+      "https://firebasestorage.googleapis.com/v0/b/melodystream-41d0f.appspot.com/o/images%2FDil-Dhadakne-Do-Hindi-2015-500x500.jpg?alt=media&token=501bafee-c1b3-4861-8b6d-4f8e806d94fc",
+  },
+  {
+    id: 13,
+    favourite: false,
+    songName: "Matargasti",
+    artist: "CVR Toon ",
+    type: "Masti",
+    song: "https://firebasestorage.googleapis.com/v0/b/melodystream-41d0f.appspot.com/o/Songs%2Fmatargasti.mp3?alt=media&token=9ad1d3bf-28da-4444-b9de-68d4896b9511",
+    imgSrc:
+      "https://firebasestorage.googleapis.com/v0/b/melodystream-41d0f.appspot.com/o/images%2FTamasha-Hindi-2015-500x500.jpg?alt=media&token=77455c3a-0d58-4feb-9535-6ce806b2a727",
+  },
+  {
+    id: 11,
+    favourite: false,
+    songName: "INNA",
+    artist: "CVR Toon ",
+    type: "Masti",
+    song: "https://firebasestorage.googleapis.com/v0/b/melodystream-41d0f.appspot.com/o/Songs%2FINNA.mp3?alt=media&token=d81f6ac6-c3da-4cd5-927a-6b4db6d5ee1d",
+    imgSrc:
+      "https://firebasestorage.googleapis.com/v0/b/melodystream-41d0f.appspot.com/o/images%2Finaa.jpeg?alt=media&token=67bce551-b12d-4f18-b51d-87b81afff6c0",
+  },
 ];
 
 export { Songs };
